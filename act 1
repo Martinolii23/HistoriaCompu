@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <locale.h>
+#include <windows.h>
+
+
+
+int main (int argc,char**argv)
+
+{
+	setlocale(LC_CTYPE,"");
+	
+	HANDLE hConsole = GetStdHandle( STD_OUTPUT_HANDLE );
+ 
+    SetConsoleTextAttribute(hConsole, 2);
+	
+	printf("\t\t\t\t\t Generaciones de las computadoras \n\n");
+	SetConsoleTextAttribute(hConsole, 9);			
+	
+	printf("\n1-Primera Generación (1940-1950s) \n2.Segunda Generación (1950s-1960s)\n3.Tercera Generación (1960s-1970)\n4.Cuarta Generación(1970s-1980s)\n");
+	printf("5.Quinta Generación de computadoras (1980- Actualidad)\n");
+	SetConsoleTextAttribute(hConsole, 3);
+	printf("\nCada generación esta marcada por una avanze significativo en la tecnologia y capacidades\nde las computadoras\n");
+	printf("\nEn un principio solian ser de tamaño grande y llegaban a ocupar habitaciones enteras.\n");
+	printf("Con el tiempo se lograron avances en microprocesadores, memoria,y almacenamiento esto genero que\n");
+	printf("A medida que avanzaban las generaciones, las computadoras se volvian mas pequenas y compactas");
+	
+	printf("\nCada nueva generacion trajo consigo un aumento en la velocidad de procesamiento\n y la capacidad de almacenamiento.\n\n");
+	SetConsoleTextAttribute(hConsole, 6);
+	
+	printf("\nMejora en la eficiencia energetica: A medida que se desarrollaron generaciones posteriores, \nse puso un enfasis en reducir el consumo de energía y el calor generado por las computadoras\n");
+	printf("Con el pasar de los años se crearon nuevos programas y aplicaciones, cada una con un proposito diferente \nA partir de la tercera generación, se comenzaron a desarrollar redes de computadoras y protocolos de comunicación,\nlo que permitió la conexión y el intercambio de información entre múltiples sistemas.\n\n");
+	SetConsoleTextAttribute(hConsole, 4);
+	
+	printf("Impacto social y económico: A lo largo de las generaciones, las computadoras tuvieron un impacto significativo en la\nsociedad y la economía, dando lugar a la automatización de procesos, la transformación de industrias\ny la creación de nuevas oportunidades comerciales.\n"); 
+	printf("Estas características compartidas son un reflejo de cómo la tecnología de las computadoras ha evolucionado \npara satisfacelas necesidades cambiantes de la sociedad y cómo cada generación ha \ncontribuido al desarrollo y avance continuo de la informática.");
+	
+	
+	
+	
+	return 0; 
